@@ -34,6 +34,10 @@ This implementation is containerized for ease of setup and portability using Doc
 - [Docker Desktop](https://www.docker.com/products/docker-desktop) installed on your machine
 - A dedicated directory to store persistent configuration (e.g., `D:/ha_config`)
 
+Once the below docker setup is done: 
+### The home assistant can be accessed via the link:
+http://localhost:8123/onboarding.html
+
 ### Run Home Assistant:
 
 ```bash
@@ -42,7 +46,3 @@ docker run -d --name homeassistant \
   -p 8123:8123 \
   --restart=unless-stopped \
   ghcr.io/home-assistant/home-assistant:stable
-
-Once the docker setup is done: 
-### The home assistant can be accessed via the below link:
-http://localhost:8123/onboarding.html
